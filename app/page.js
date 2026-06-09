@@ -606,7 +606,29 @@ const [orderNumber, setOrderNumber] = useState(1000);
     </p>
   </div>
 )}
+{paymentMethod === "mercadopago" && (
+  <div className="mt-4 bg-stone-50 border rounded-2xl p-5">
+    <h4 className="font-semibold text-lg mb-3">
+      Datos para Mercado Pago
+    </h4>
 
+    <p>
+      <strong>Alias:</strong> cacao.iba.aun.mp
+    </p>
+
+    <p>
+      <strong>Titular:</strong> Nerina Lacueva
+    </p>
+
+    <p className="mt-3 text-sm text-stone-500">
+      Realizá el pago desde Mercado Pago utilizando el alias indicado.
+    </p>
+
+    <p className="mt-2 text-sm text-stone-500">
+      Conservá el comprobante para cualquier consulta sobre tu pedido.
+    </p>
+  </div>
+)}
 {/* RESUMEN DEL PEDIDO */}
 <div className="mt-8 border-t pt-6">
   <h3 className="text-xl text-[#5C4B66] mb-4">
@@ -739,6 +761,7 @@ const productosPedido = cart
   branches[selectedProvince]?.find(
     (b) => b.name === selectedBranch
   );
+  
     alert(
 `Pedido realizado
 Pedido Nº: ${pedidoActual}
