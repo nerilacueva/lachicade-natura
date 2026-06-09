@@ -608,8 +608,11 @@ const [orderNumber, setOrderNumber] = useState(1000);
 
     <p className="mt-4 text-sm text-stone-500">
       Una vez realizada la transferencia, conservá el comprobante.
-  Nos comunicaremos para confirmar el pago y procesar tu pedido.
+
     </p>
+    <p className="mt-2 text-sm text-stone-500">
+  Tu pedido será preparado luego de verificar la acreditación del pago.
+</p>
   </div>
 )}
 {paymentMethod === "mercadopago" && (
@@ -631,8 +634,9 @@ const [orderNumber, setOrderNumber] = useState(1000);
     </p>
 
     <p className="mt-2 text-sm text-stone-500">
-      Conservá el comprobante para cualquier consulta sobre tu pedido.
+      Conservá el comprobante.Tu pedido será preparado luego de verificar la acreditación del pago.
     </p>
+    
   </div>
 )}
 {/* RESUMEN DEL PEDIDO */}
