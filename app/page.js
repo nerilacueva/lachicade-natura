@@ -565,6 +565,7 @@ const [orderNumber, setOrderNumber] = useState(1000);
   </p>
 
   <select
+  
     value={paymentMethod}
     onChange={(e) => setPaymentMethod(e.target.value)}
     className="w-full border rounded-xl p-4"
@@ -581,6 +582,11 @@ const [orderNumber, setOrderNumber] = useState(1000);
       Transferencia Bancaria
     </option>
   </select>
+  <p className="mt-2 text-red-500">
+  Valor actual: {paymentMethod}
+</p>
+
+</div>
 </div>
 {paymentMethod === "transferencia" && (
   <div className="mt-4 bg-stone-50 border rounded-2xl p-5">
